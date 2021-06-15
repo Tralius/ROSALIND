@@ -31,3 +31,15 @@ def build_complement(dna_string):
     for nucleotide in dna_string:
         complement_string += complement_nucleotides[nucleotide]
     return complement_string[::-1]
+
+def content_GC(dna_string):
+
+
+def rabbit_reproduction(gen, k):
+    if gen == 1 or gen == 2:
+        return k
+    else:
+        r1 = rabbit_reproduction(gen-1, k)
+        r2 = rabbit_reproduction(gen-2, k)
+        return r1 + r2
+

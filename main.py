@@ -1,8 +1,13 @@
 import biolib
 
+def readFromFile(type, file):
+    f = open(file, "r")
+    if type == 0:
+        string =
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    string = ""
+    string = readFromFile(0, "")
     """ Rosalind Counting nucleotides
     
     nucleotides_counted = biolib.count_nucleotides(string)
@@ -23,3 +28,8 @@ if __name__ == '__main__':
     print(biolib.build_complement(string))
     
     """
+
+    """ Wascally Wabbits  """
+
+    print(biolib.rabbit_reproduction(5, 3))
+
